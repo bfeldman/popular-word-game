@@ -2,7 +2,13 @@ import styled from 'styled-components'
 
 const Box = styled.div`
   border: 1px solid black;
-  width: fit-content;
+  min-width: 15px;
+  min-height: 20px;
+  max-height: fit-content;
+  max-width: fit-content;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
   background-color: ${props => props.letterBackground};
 `
 

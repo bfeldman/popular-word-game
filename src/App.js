@@ -1,13 +1,18 @@
+import styled from 'styled-components'
 import GuessForm from './components/GuessForm'
 import WordBoard from './containers/WordBoard'
 
+const GameContainer = styled.div`
+  margin: 50px;
+`
+
 function App() {
   return (
-    <div className="App">
+    <GameContainer>
       <h3>BRIANLE</h3>
       <GuessForm />
       <WordBoard />
-    </div>
+    </GameContainer>
   );
 }
 
